@@ -7,14 +7,10 @@ use Library\TopPerson\TopPersonException;
 
 class HttpCurl
 {
-    public static function doRequest(string $requestType, string $pathUrl, array $auth, array $data): array
+    public static function doRequest(string $requestType, string $pathUrl, array $auth, ?array $data = null): array
     {
         if (empty($pathUrl)) {
             throw new TopPersonException('The endpoint is empty');
-        }
-
-        if (empty($data)) {
-            throw new TopPersonException('No data to send');
         }
 
         $ch = curl_init($pathUrl);

@@ -6,9 +6,9 @@ namespace Library\TopPerson;
 class Config
 {
     protected static $url = 'http://127.0.0.10';
-    protected static $addUserPath = '/rest/dodawanie';
-    protected static $updateUserPath = '/rest/aktualizacja';
-    protected static $deleteUserPath = '/rest/usuwanie';
+    protected static $addUserPath = '/rest/dodaj-uzytkownika';
+    protected static $updateUserPath = '/rest/zaktualizuj-uzytkownika';
+    protected static $deleteUserPath = '/rest/usun-uzytkownika';
     protected static $user = 'user';
     protected static $password = 'lSp8GJ7F8b$fC@8hK6FbZ6I9L';
 
